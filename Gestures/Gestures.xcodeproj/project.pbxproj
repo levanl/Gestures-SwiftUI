@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C4254A3C2B3584E4003FCCF9 /* GesturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4254A3B2B3584E4003FCCF9 /* GesturesApp.swift */; };
-		C4254A3E2B3584E4003FCCF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4254A3D2B3584E4003FCCF9 /* ContentView.swift */; };
 		C4254A402B3584E5003FCCF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4254A3F2B3584E5003FCCF9 /* Assets.xcassets */; };
 		C4254A432B3584E5003FCCF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4254A422B3584E5003FCCF9 /* Preview Assets.xcassets */; };
+		C4254A4A2B358559003FCCF9 /* ArtGalleryScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4254A492B358559003FCCF9 /* ArtGalleryScene.swift */; };
+		C4254A522B359A36003FCCF9 /* santa1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4254A512B359A36003FCCF9 /* santa1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4254A382B3584E4003FCCF9 /* Gestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4254A3B2B3584E4003FCCF9 /* GesturesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesApp.swift; sourceTree = "<group>"; };
-		C4254A3D2B3584E4003FCCF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4254A3F2B3584E5003FCCF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4254A422B3584E5003FCCF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4254A492B358559003FCCF9 /* ArtGalleryScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtGalleryScene.swift; sourceTree = "<group>"; };
+		C4254A4E2B3597CE003FCCF9 /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
+		C4254A512B359A36003FCCF9 /* santa1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = santa1.mp3; path = ../../../../../../Downloads/santa1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +54,11 @@
 		C4254A3A2B3584E4003FCCF9 /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
+				C4254A4D2B3597C9003FCCF9 /* Sounds */,
 				C4254A3B2B3584E4003FCCF9 /* GesturesApp.swift */,
-				C4254A3D2B3584E4003FCCF9 /* ContentView.swift */,
 				C4254A3F2B3584E5003FCCF9 /* Assets.xcassets */,
 				C4254A412B3584E5003FCCF9 /* Preview Content */,
+				C4254A492B358559003FCCF9 /* ArtGalleryScene.swift */,
 			);
 			path = Gestures;
 			sourceTree = "<group>";
@@ -65,6 +69,15 @@
 				C4254A422B3584E5003FCCF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4254A4D2B3597C9003FCCF9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C4254A512B359A36003FCCF9 /* santa1.mp3 */,
+				C4254A4E2B3597CE003FCCF9 /* sound.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4254A432B3584E5003FCCF9 /* Preview Assets.xcassets in Resources */,
+				C4254A522B359A36003FCCF9 /* santa1.mp3 in Resources */,
 				C4254A402B3584E5003FCCF9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4254A3E2B3584E4003FCCF9 /* ContentView.swift in Sources */,
+				C4254A4A2B358559003FCCF9 /* ArtGalleryScene.swift in Sources */,
 				C4254A3C2B3584E4003FCCF9 /* GesturesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
