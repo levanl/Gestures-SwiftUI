@@ -8,7 +8,7 @@
 import SwiftUI
 import AVFAudio
 
-class SoundPlayer {
+final class SoundPlayer {
     var audioPlayer: AVAudioPlayer?
     
     func playSound(withName name: String, fileType: String) {

@@ -10,6 +10,7 @@ import AVFAudio
 
 struct ArtGalleryScene: View {
     
+    // MARK: - Properties
     @EnvironmentObject private var viewModel: ArtGalleryViewModel
     
     let soundPlayer = SoundPlayer()
@@ -17,6 +18,7 @@ struct ArtGalleryScene: View {
     @State private var scale: CGFloat = 1.0
     @State var position: Angle = Angle(degrees: 0)
     
+    // MARK: - Body
     var body: some View {
         ScrollView {
             VStack (spacing: 20) {
@@ -57,18 +59,6 @@ struct ArtGalleryScene: View {
                             }
                     )
                 
-                ImageArtView(imageName: viewModel.isLongPressActive ? "JOZE" : "SILVIA")
-                    .onLongPressGesture(minimumDuration: 1) {
-                        withAnimation {
-                            viewModel.isLongPressActive.toggle()
-                        }
-                    }
-                ImageArtView(imageName: viewModel.isLongPressActive ? "JOZE" : "SILVIA")
-                    .onLongPressGesture(minimumDuration: 1) {
-                        withAnimation {
-                            viewModel.isLongPressActive.toggle()
-                        }
-                    }
                 ImageArtView(imageName: viewModel.isLongPressActive ? "JOZE" : "SILVIA")
                     .onLongPressGesture(minimumDuration: 1) {
                         withAnimation {
