@@ -10,9 +10,12 @@ import SwiftUI
 @main
 struct GesturesApp: App {
     
+    @StateObject private var viewModel = ArtGalleryViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ArtGalleryScene()
+                .environmentObject(viewModel)
         }
     }
 }
